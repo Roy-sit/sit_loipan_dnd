@@ -1,11 +1,12 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 	<title>Drag and Drop Puzzle Game</title>
 	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
 	<button id="resetBut">RESET</button>
 
@@ -13,16 +14,18 @@
 		<h1>drag and drop!</h1>
 		<p>solve the puzzle</p>
 	</header>
+
+  <!-- Puzzle game 1 -->
 	<section id="game-boards">
-		<!-- these are the draggable pieces -->
+    <h2 class="hidden">Game Board 1</h2>
+		<!-- draggable pieces -->
 		<div class="puzzle-pieces">
 			<img src="images/topLeft0.jpg" class="puzzle-image" alt="top left" draggable="true">
 			<img src="images/topRight0.jpg" class="puzzle-image" alt="top right" draggable="true">
 			<img src="images/bottomLeft0.jpg" class="puzzle-image" alt="bottom left" draggable="true">
 			<img src="images/bottomRight0.jpg" class="puzzle-image" alt="bottom right" draggable="true">
 		</div>
-
-		<!-- we want to drop the draggable pieces here -->
+		<!-- drop zones -->
 		<div class="puzzle-board">
 			<div class="drop-zone tl"></div>
 			<div class="drop-zone tr"></div>
@@ -30,6 +33,66 @@
 			<div class="drop-zone br"></div>
 		</div>
 	</section>
+
+
+   <!-- Puzzle game 2 -->
+	<section id="game-boards-2">
+    <h2 class="hidden">Game Board 2</h2>
+		<!-- draggable pieces -->
+		<div class="puzzle-pieces">
+			<img src="images/topLeft1.jpg" class="puzzle-image" alt="top left" draggable="true">
+			<img src="images/topRight1.jpg" class="puzzle-image" alt="top right" draggable="true">
+			<img src="images/bottomLeft1.jpg" class="puzzle-image" alt="bottom left" draggable="true">
+			<img src="images/bottomRight1.jpg" class="puzzle-image" alt="bottom right" draggable="true">
+		</div>
+		<!-- drop zones -->
+		<div class="puzzle-board-2">
+			<div class="drop-zone tl"></div>
+			<div class="drop-zone tr"></div>
+			<div class="drop-zone bl"></div>
+			<div class="drop-zone br"></div>
+		</div>
+	</section>
+
+
+     <!-- Puzzle game 3 -->
+	<section id="game-boards-3">
+    <h2 class="hidden">Game Board 3</h2>
+		<!-- draggable pieces -->
+		<div class="puzzle-pieces">
+			<img src="images/topLeft2.jpg" class="puzzle-image" alt="top left" draggable="true">
+			<img src="images/topRight2.jpg" class="puzzle-image" alt="top right" draggable="true">
+			<img src="images/bottomLeft2.jpg" class="puzzle-image" alt="bottom left" draggable="true">
+			<img src="images/bottomRight2.jpg" class="puzzle-image" alt="bottom right" draggable="true">
+		</div>
+		<!-- drop zones -->
+		<div class="puzzle-board-3">
+			<div class="drop-zone tl"></div>
+			<div class="drop-zone tr"></div>
+			<div class="drop-zone bl"></div>
+			<div class="drop-zone br"></div>
+		</div>
+	</section>
+
+       <!-- Puzzle game 3 -->
+	<section id="game-boards-4">
+    <h2 class="hidden">Game Board 4</h2>
+		<!-- draggable pieces -->
+		<div class="puzzle-pieces">
+			<img src="images/topLeft3.jpg" class="puzzle-image" alt="top left" draggable="true">
+			<img src="images/topRight3.jpg" class="puzzle-image" alt="top right" draggable="true">
+			<img src="images/bottomLeft3.jpg" class="puzzle-image" alt="bottom left" draggable="true">
+			<img src="images/bottomRight3.jpg" class="puzzle-image" alt="bottom right" draggable="true">
+		</div>
+		<!-- drop zones -->
+		<div class="puzzle-board-4">
+			<div class="drop-zone tl"></div>
+			<div class="drop-zone tr"></div>
+			<div class="drop-zone bl"></div>
+			<div class="drop-zone br"></div>
+		</div>
+	</section>
+
 
 	<footer>
 		<p>click thumb to change pieces!</p>
