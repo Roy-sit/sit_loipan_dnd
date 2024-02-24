@@ -3,7 +3,7 @@ let draggedPiece;
 let puzzleBoard = document.querySelector(".puzzle-board");
 let puzzlePieces = document.querySelectorAll(".puzzle-image");
 let dropZones = document.querySelectorAll(".drop-zone");
-let currentGame = 1; // Default game is 1
+let currentGame = 1; // Set default game to 1
 
 // Handle drag start
 function handleDragStart(event) {
@@ -20,7 +20,7 @@ function handleDrop(event) {
     event.preventDefault();
     // Check if the drop zone already has a puzzle
     if (!this.querySelector('.puzzle-image')) {
-        // If drop zone is empty, allow the other puzzle pieces
+        // If drop zone is empty, allow the other puzzle pieces to drop
         this.appendChild(draggedPiece.cloneNode(true));
     }
 }
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById(boardId).style.display = "block";
   }
 
-  // Event listeners for thumbnail clicks
+  // Event listeners for thumbnail for clicks
   document.getElementById("0").addEventListener("click", function() {
       showGameBoard("game-boards");
   });
