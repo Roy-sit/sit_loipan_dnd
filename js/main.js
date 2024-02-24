@@ -28,7 +28,7 @@ function handleDrop(event) {
 // Reset puzzle pieces in drop zones
 function resetDropZone() {
     dropZones.forEach(zone => {
-        // Clear each drop zone
+        // Clear piece in each drop zone
         while (zone.firstChild) {
             puzzleBoard.appendChild(zone.firstChild);
         }
