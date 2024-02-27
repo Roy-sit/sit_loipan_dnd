@@ -22,8 +22,11 @@ function handleDrop(event) {
     if (!this.querySelector('.puzzle-image')) {
         // If drop zone is empty, allow the other puzzle pieces to drop
         this.appendChild(draggedPiece.cloneNode(true));
+        // After drop a puzzle piece, remove it from the puzzle piece zone
+        draggedPiece.remove();
     }
 }
+
 
 // Reset puzzle pieces in drop zones
 function resetDropZone() {
