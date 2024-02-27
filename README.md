@@ -25,3 +25,5 @@ Solution: Added a resetDropZone function to handle the reset of drop zones, and 
 Problem (4): To enable switching between puzzle games by clicking on the thumbnail.
 Solution: Added event listeners to each thumbnail. When it is clicked, it switches from different puzzle games, and added logic to hide all puzzle game sections except the thumbnail that is clicked, this ensures only the selected puzzle game is displayed, while the others are hidden.
 
+Problem (5): Dropped puzzle pieces remain in the piece box.
+Solution: Added 'remove()' function to remove the dragged piece from the DOM.
